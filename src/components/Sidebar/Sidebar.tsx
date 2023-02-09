@@ -4,6 +4,7 @@ import { useState, useContext } from "react";
 import SidebarContext from "./SidebarContext";
 import SidebarItem from "./SidebarItem";
 import CardMenu from "../Cards/CardMenu";
+import Image from "next/image"
 
 function Sidebar({children} :any){
 
@@ -35,7 +36,7 @@ function Sidebar({children} :any){
         <div className="flex w-full">
             <div className={`${open ? "w-[45rem] shadow-2xl lg:w-48 shadow-none" : "w-0 lg:w-16"} h-screen bg-blue-600 ease-in-out duration-300 lg:block`}>
                 <div className="flex flex-row w-full justify-center mb-4">
-                    <img className="mt-4 max-h-[8rem]" src={ufalLogo} alt="logo"/>
+            <Image className="mt-4 max-h-[8rem]" src={ ufalLogo } alt="logo" width={128} height={128} />
                 </div>   
                 {Menus.map((item, index) => {
                     return <SidebarItem item={item} key={index}/>

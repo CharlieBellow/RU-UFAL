@@ -34,7 +34,7 @@ function SidebarItem(props: Item){
             </Link>
             <div className="flex flex-col w-full relative">                
                     {open && selected && props.item.children ? props.item.children.map((child : Item, index : number) => {
-                        return <div className={`text-white flex flex-col mx-2 px-6 py-2 gap-4 rounded-lg items-start ease-in-out duration-300 hover:bg-blue-700 cursor-pointer`}>
+                      return <div className={ `text-white flex flex-col mx-2 px-6 py-2 gap-4 rounded-lg items-start ease-in-out duration-300 hover:bg-blue-700 cursor-pointer` } key={ index }>
                             <Link href={child.dir? child.dir : "#"} key={index}>{child.title}</Link>
                         </div>
                     }) : <></>} 
