@@ -1,3 +1,12 @@
+
+
+![ru](https://github.com/user-attachments/assets/22558aba-868b-4ced-9964-451fb8b1c6ad)
+
+## RU - UFAL
+
+Por enquanto estamos desenvolvendo esse projeto, utilizando React, Next e Typescript
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
